@@ -17,7 +17,7 @@ jobs:
           - name: Run PowerShell Script
             run: pwsh -file generate_names.ps1
 
-          - name: Add to readme file
+          - name: Add to the readme file
             uses: EndBug/add-and-commit@v9
             with:
               author_name: Qaseem Zalmai

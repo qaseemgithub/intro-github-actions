@@ -11,4 +11,10 @@ jobs:
             
           - name: Run PowerShell Script
             run: pwsh -file generate_names.ps1
-        
+    job2:
+        needs: 
+          - job1
+        runs-on: ubuntu latest
+        steps:
+          - name: Sleep 3 Seconds
+            run: sleep 3

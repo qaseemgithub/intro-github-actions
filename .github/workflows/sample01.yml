@@ -11,16 +11,30 @@ jobs:
             
           - name: Run PowerShell Script
             run: pwsh -file generate_names.ps1
-    job2:
-        runs-on: ubuntu latest
-        steps:
-          - name: Sleep 3 Seconds
-            run: sleep 3
-    job3:
-        needs:
-          - job1
-          - job2
-        runs-on: ubuntu latest
-        steps:
-          - name: Sleep 5 Seconds
-            run: sleep 5
+
+          - name: Add to readme file
+            uses: EndBug/add-and-commit@v9
+            with:
+              author_name: Qaseem Zalmai
+              author_email: mqaseem634@gmail.com
+
+
+
+
+
+
+
+            
+    # job2:
+    #     runs-on: ubuntu latest
+    #     steps:
+    #       - name: Sleep 3 Seconds
+    #         run: sleep 3
+    # job3:
+    #     needs:
+    #       - job1
+    #       - job2
+    #     runs-on: ubuntu latest
+    #     steps:
+    #       - name: Sleep 5 Seconds
+    #         run: sleep 5

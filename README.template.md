@@ -2,4 +2,4 @@
 
 The current time is: %%CURRENTTIME%%
 
-Add new line
+Removing the line
